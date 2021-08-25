@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+    <listeners>
+        <listener class-name="com.norwegian.utils.Listeners"/>
+    </listeners>
+
+    <parameter name="deviceName" value="Pixel3"/>
+    <parameter name="udid" value="8AWX10GH2"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="appPackage" value="com.ncl.nclcruiseinfo"/>
+    <parameter name="appActivity" value="MainActivity"/>
+    <parameter name="newCommandTimeout" value="3600"/>
+    <parameter name="unicodeKeyboard" value="true"/>
+    <parameter name="resetKeyboard" value="true"/>
+    <parameter name="fullReset" value="false"/>
+    <parameter name="noReset" value="true"/>
+    <parameter name="portNumber" value="5555"/>
+
+    <test name="TestSuite-For-Nougat-4">
+        <classes>
+            <class name="com.norwegian.test.explore.SelectShipAndVerifyTest"/>
+        </classes>
+    </test>
+
+
+    <packages>
+        <package name="tests.android.settingsview"/>
+    </packages>
+
+    <packages>
+        <package name="tests.android.appsettingsview"/>
+    </packages>
+
+</suite>
